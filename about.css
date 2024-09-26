@@ -1,0 +1,438 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    }
+
+/* nav bar section start here */
+
+    .nav{
+    width: 100%;
+    height: 100px;
+    background-color: #ebe9eb;
+    display: flex;
+    border-bottom: #F79A33 solid 2px;
+    }
+    .logo{
+        width: 20%;
+        height: 100px;
+    }
+    .logo img{
+    width: 100%;
+    height: 100%;
+    }
+    .menu{
+    height: 100px;
+    width: 60%;
+    }
+    .menu ul{
+    display: flex;
+    gap: 50px;
+    margin-left: 60px;
+    margin-top: 42px;
+    }
+    .menu ul li{
+    list-style: none;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        position: relative;
+        width: max-content;
+        
+        }
+        .menu ul li a::after{
+            position: absolute;
+            height: 4px;
+            content: "";
+            width: 0%;
+            left: 0;
+            bottom: -7px;
+            transform: scale(0);
+            background-color:#F79A33 ;
+        transition: all ease-in-out 0.3s;
+        width: 0%;
+        }
+        
+        .menu ul li a:hover::after{
+            transform: scale(1);
+            width: 100%;
+        }
+    .search{
+    height: 100px;
+    width: 20%;
+    }
+    .search button{
+        padding: 10px 30px;
+        margin-top: 25px;
+        margin-left: 35px;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        border-color:#F79A33;
+        background-color: transparent;
+    }
+    .search button:hover{
+        background-color: #F79A33;
+        color: black;
+        transition: all ease 1s;
+        cursor: pointer;}
+
+        /* nav bar section End here */
+.front{
+    background-image: url(Asset/about/bg.jpg);
+    background-position: center;
+    background-size: cover;
+height: 70vh;
+width: 100%;
+text-align: center;
+border: transparent 0.1px solid;
+
+}
+.front h2{
+    font-size: 70px;
+margin-top: 125px;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: #F79A33 1px 1px 5px;
+
+}
+.front h3{
+    font-size: 30px;
+    letter-spacing: 1.5px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-shadow: #F79A33 1px 1px 5px;
+}
+.mid{
+height: 135vh;
+width: 100%;
+display: flex;
+background-color: #e8ecf4;
+}
+.text {
+    width: 30%;
+ background: transparent;
+    justify-content: center;
+    padding: 20px;
+}
+.text p{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+.text h2{
+    margin-top: 10px;
+    font-size: 40px;
+    -webkit-text-stroke: #F79A33 0.2px;
+}
+
+.text h4{
+    font-size: 20px;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.text pre{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+}
+.text pre i{
+    font-size: 15px;
+    margin-right: 5px;
+    transition: all 0.5s;
+}
+.text pre i,pre:hover{
+    scale: 1.1;
+    rotate: none;
+    background-color: transparent;
+    color: black;
+}
+.pic{
+    width: 70%;
+    background-image: url(Asset/about/side\ image.png);
+   background-position: center;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+background-color:#fffbfb ;
+cursor: default;
+}
+
+.box{
+    height: 400px;
+    width: 300px;
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;  
+
+
+}
+
+
+
+.box i{
+font-size: 180px;
+color: #F79A33;
+transition: all 0.5s;
+cursor: default;
+}
+
+.box i:hover{
+rotate: none;
+background-color: transparent;
+color: blue;
+
+}
+.box h3{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.box p{
+    font-family: arial;
+    letter-spacing: 1px;
+    padding: 5px;
+    font-size: 17px;
+    
+}
+.box button{
+    padding: 10px 20px;
+    margin: 8px;
+    cursor: pointer;
+    font-family: fantasy;
+    font-weight: bold;
+transition: all ease 0.5s;
+margin-top: 30px;
+background-color: #d3d3d3;
+border: none;
+}
+.box button:hover{
+    background-color: #F79A33;
+    border-color: transparent;
+}
+.main h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px; 
+}
+.main h1 span{
+    border-bottom: #F79A33 solid 4px;
+   
+}
+.number{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #e8ecf4;
+    
+}
+.you{
+width: 30%;
+
+text-align: center;
+align-items: center;
+margin-top: 20px;
+}
+.you h1{
+    font-size: 60px;
+    font-family: Impact;
+    letter-spacing: 1px;
+    padding: 20px;
+    color: #F79A33;
+    cursor: default;
+}
+.you h2{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    cursor: default;
+}
+.CEO{
+    height: 70vh;
+    align-items: center;
+    text-align: center;
+    background-color: #e8ecf4;
+    display: flex;
+}
+.aqeel{
+height: 90%;
+width: 50%;
+
+margin-left: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(#f8ce9e , #F79A33);
+transition: all 2s;
+margin-bottom: 60px;
+color: white;
+-webkit-text-stroke: black 2px;
+
+
+}
+.aqeel h1{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+cursor: default;
+font-style: italic;
+
+}
+.aqeel:hover{
+background-image: url(Asset/about/majid.jfif);
+background-position: center;
+background-size: cover;
+color: transparent;
+-webkit-text-stroke-color: transparent;
+
+
+}
+
+
+
+
+    /* footer section start here */
+
+    .footer{
+        display: flex;
+        width: 100%;
+        height: 500px;
+
+        background-color: #ebe9eb;
+        border-top: solid 3px black;
+        justify-content: space-around;
+        }
+        .total{
+            width: 300px;
+            height: 400px;
+            align-items: center;
+            padding: 10px 30px;
+            margin-top: 20px;
+        }
+        .total h1{
+            color: black;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .total span{
+        padding: 0px 10px;
+        border-left: #F79A33 solid;
+        }
+        .total p{
+        margin: 25px 0px;
+        letter-spacing: 1.5px;
+        font-family: 'Times New Roman', Times, serif;
+        
+        }
+        .info{
+            width: 300px;
+            height: 400px;
+            align-items: center;
+            padding: 10px 0px;
+            margin-top: 20px;
+         
+        }
+        .info h1{
+            color: black;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .info span{
+            padding: 0px 10px;
+            border-left: #F79A33 solid;
+            }
+            .info ul{
+                margin: 45px 0px;
+        
+            }
+         .info p{
+                display: flex;
+                align-items: center;
+                
+         }
+         .info img{
+            height: 40px;
+            width: 38px;
+            margin: 30px 3px;
+            cursor: pointer;
+            padding: 0px 5px;
+            transition: all ease 0.5s;
+         }
+         .info img:hover{
+            transform: scale(1.2);
+         }
+        
+        .info ul li{
+        list-style: none;
+        margin-top: 10px;
+        letter-spacing: 1px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 15px;
+        }
+        i{
+           height: 20px;
+           width: 20px;
+           border-radius: 50%;
+           text-align: center;
+           transition: all ease 0.5s;
+          cursor: pointer;
+        
+        }
+        i:hover{  background-color: #F79A33; 
+             rotate: 360deg;
+        color: white;
+        }
+            
+           
+        
+        
+        .browse{
+            width: 300px;
+            height: 400px;
+            align-items: center;
+            padding: 10px 0px;
+            margin-top: 20px;
+        }
+        .browse h1{
+            color: black;
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+        .browse span{
+            padding: 0px 10px;
+            border-left: #F79A33 solid;
+            }
+        .browse ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .browse ul li a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            line-height: 30px;
+            transition: all ease 0.3s;
+        }
+        .browse ul li a:hover{
+            font-weight: bold;
+            color: white;
+            background-color: #F79A33;
+            padding: 8px;
+        border-radius: 10px;
+        }
+        /* footer section Endhere */
